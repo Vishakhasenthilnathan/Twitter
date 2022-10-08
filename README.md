@@ -3,7 +3,7 @@
 Twitter clone app with the Basic feature developed using Java 
 1. Login/signup
 
-![img.png](img.png)
+![img_5.png](img_5.png)
 
 2. View all the available users (followers)
    
@@ -12,6 +12,9 @@ Twitter clone app with the Basic feature developed using Java
    
 ![img_2.png](img_2.png)
 4. Ability to View the followers feed, Tweet a post and logout
+
+
 ![img_3.png](img_3.png)
+
    
 ![img_4.png](img_4.png)
