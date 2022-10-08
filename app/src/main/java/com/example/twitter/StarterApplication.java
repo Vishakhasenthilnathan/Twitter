@@ -23,11 +23,11 @@ public class StarterApplication extends Application {
         Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
                 .applicationId("myappID")
                 .clientKey("wmAdOP37zLO9")
-                .server("http://43.205.208.81/parse/")
+//                .server("http://43.205.208.81/parse/")
+                .server("http://ec2-13-234-118-196.ap-south-1.compute.amazonaws.com/parse/")
                 .build()
 
         );
-
 //     ParseUser.enableAutomaticUser();
 
         ParseACL defaultACL = new ParseACL();
