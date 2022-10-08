@@ -18,6 +18,9 @@
         android:theme="@style/Theme.Twitter"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ViewTweetsActivity"
+            android:exported="false" />
+        <activity
             android:name=".FollowersActivity"
             android:exported="false" />
         <activity

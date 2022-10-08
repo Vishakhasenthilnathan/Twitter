@@ -51,6 +51,10 @@ public class FollowersActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
+        else if (item.getItemId() == R.id.viewFeed) {
+            Intent intent = new Intent(this, ViewTweetsActivity.class);
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
     }
 
