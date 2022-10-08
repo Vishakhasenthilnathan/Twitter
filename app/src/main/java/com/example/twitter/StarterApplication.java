@@ -28,8 +28,6 @@ public class StarterApplication extends Application {
 
         );
 
-        ParseUser.logOut();
-
 //     ParseUser.enableAutomaticUser();
 
         ParseACL defaultACL = new ParseACL();

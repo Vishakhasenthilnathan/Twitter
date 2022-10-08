@@ -16,6 +16,9 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+import java.sql.Array;
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     TextView LoginOrSignupButton;
@@ -50,11 +53,13 @@ public class MainActivity extends AppCompatActivity {
                         ParseUser parseUser = new ParseUser();
                         parseUser.setUsername(userNameText.getText().toString());
                         parseUser.setPassword(passwordText.getText().toString());
+                        parseUser.put("isFollowing", new ArrayList<String>());
                         parseUser.signUpInBackground(new SignUpCallback() {
                             @Override
                             public void done(ParseException e) {
                                 if (e == null) {
                                     Toast.makeText(MainActivity.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MainActivity.this, "Signed up successfully"+ParseUser.getCurrentUser().getUsername(), Toast.LENGTH_SHORT).show();
                                     redirectTofollowersList();
                                 } else {
                                     Toast.makeText(MainActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
